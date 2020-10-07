@@ -224,13 +224,13 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/background/pexels-matheus-viana.jpg) no-repeat;
+  background: url(../images/background/pexels-matheus-viana.png) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .bg-banner-two {
-  background: url(../images/background/banner-bg-two.jpg) no-repeat;
+  background: url(../images/background/banner-bg-two.png) no-repeat;
   background-size: cover;
   background-position: right center;
 }
@@ -1023,7 +1023,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .banner .block h1 {
   text-transform: uppercase;
-  font-size: 12rem; /* 5.5rem*/
+  font-size: 192px; /* 12rem 5.5rem */
   color: #ff6600;
   font-weight: 500;
   margin-bottom: 5px;
@@ -1032,34 +1032,45 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 767px) {
   .banner .block h1 {
-    font-size: 4rem;
+    font-size: 89px; /* 89px 8.7rem 4rem */
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 575px) {
   .banner .block h1 {
-    font-size: 3rem;
+    font-size: 62px;
   }
 }
 
 .banner .block h2 {
-  text-transform: uppercase;
-  font-size: 4.625rem;
-  color: #fff;
-  font-weight: 400;
-  text-shadow: 3.5px 6.062px 0px rgba(0, 0, 0, 0.1);
-  font-style: italic;
+  font-size: 35px;
 }
 
 @media (max-width: 767px) {
   .banner .block h2 {
-    font-size: 3.2rem;
+    font-size: 35px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 575px) {
   .banner .block h2 {
-    font-size: 2.3rem;
+    font-size: 28px;
+  }
+}
+
+.banner .block h3 {
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  .banner .block h3 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner .block h3 {
+    font-size: 13px;
   }
 }
 
@@ -1067,6 +1078,19 @@ select.form-control:not([size]):not([multiple]) {
   color: #000;
   font-weight: 400;
   margin-bottom: 50px;
+  font-size: 20;
+}
+
+@media (max-width: 767px) {
+    .banner .block h6 {
+	font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner .block h6 {
+	font-size: 9px;
+    }
 }
 
 .banner-two {
