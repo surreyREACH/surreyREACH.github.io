@@ -1515,11 +1515,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule .schedule-contents .schedule-item ul li div {
-  display: inline-block;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .schedule .schedule-contents .schedule-item ul li .time {
-  width: 20%;
+    width: 20%;
 }
 
 @media (max-width: 767px) {
