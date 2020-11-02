@@ -1579,6 +1579,11 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
+.schedule .schedule-contents .schedule-item ul li .abstract {
+    width: 100%;
+    /*background: rgba(255, 102, 0, 0.15)*/
+}
+
 .schedule .schedule-contents .schedule-item li.headings {
   padding: 22px 40px;
   background: #ff6600;
