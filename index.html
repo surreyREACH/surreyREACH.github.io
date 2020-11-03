@@ -20,6 +20,7 @@
   <link href="plugins/slick/slick-theme.css" rel="stylesheet">
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet" >
 
   <!-- FAVICON -->
   <link href="images/favicon.png" rel="shortcut icon">
@@ -400,7 +401,7 @@
 			<div class="col-12">
 				<div class="section-title">
 					<h3>Event <span class="alternate">Schedule</span></h3>
-					<p>We have an exciting line up of events spanning five days, focusing on a different aspect of research culture each day.</p>
+					<p>We have an exciting line up of events spanning five days, focusing on a different aspect of research culture each day. Each day will feature two virtual talks over Zoom.</p>
 				</div>
 			</div>
 		</div>
@@ -514,6 +515,7 @@
 							  		</div>
 							  		<!-- Subject -->
 							  		<div class="subject">Spreading the Word: Why Science Communication is so Vital</div>
+									<div class="abstract"><br>Science communication has changed out of all recognition over the past quarter of a century that I have been actively involved in it. In this talk I will discuss how and why science communication, particularly in the UK, has undergone such a revolution. I will also say something about the way science and scientists have been perceived by the general public during the coronavirus pandemic. We hear terms like 'following the science' or 'heeding the advice of experts', but what do they really mean? So, what has changed and is it a change for the better? I will also address the wider issues surrounding the importance of communicating science to society.</div>
 					  			</div>
 					  		</li>
 					  		<!-- Schedule Details -->
@@ -623,7 +625,8 @@
 										<span class="name">Kate Gleeson</span>
 							  		</div>
 							  		<!-- Subject -->
-							  		<div class="subject">Ask the Director! Research Culture at the University of Surrey</div><!--Try Softer: How to Thrive as a Researcher in an Uncertain World-->
+							  		<div class="subject">Thriving In an Uncertain World; Reach In and Reach Out: Thriving in Your Career</div><!--Try Softer: How to Thrive as a Researcher in an Uncertain World-->
+									<div class="abstract"><br>Kate Gleeson will open with a discussion about how to thrive in an uncertain world and what a good day at work looks like, followed by an Ask the Director Q&A segement based on questions submitted in advance and the day of.  Emma Francis and Rana Marrington will then discuss what it can look like to thrive in your career, covering self-awareness, self-reflection, positive mindset and then reaching out to explore opportunities, building connections, links with career resilience and career adaptability especially in the current climate.</div>
 					  			</div>
 					  		</li>
 					  	</ul>
@@ -686,64 +689,71 @@
 
 
 
-<!--=============================
-=            Feature            =
-==============================-->
 
-<section class="ticket-feature">
-	<div class="container-fluid m-0 p-0">
-		<div class="row p-0 m-0">
-			<div class="col-lg-7 p-0 m-0">
-				<div class="block bg-timer overlay-dark text-center">
-					<div class="section-title white m-0">
-						<h3>Join the <span class="alternate">Discussion</span></h3>
-						<p>Free and open to all members of the University of Surrey community.</p>
-						<p>Each day will feature two virtual talks over Zoom, each an hour long.</p>
-						<p>Connection details will only be sent to registered participants.</p>
-						<br>
-					</div>
-					<a href="https://www.eventbrite.co.uk/e/surrey-reach-research-culture-week-tickets-124385021949" class="btn btn-main-md">Register</a>
-				</div>
-			</div>
-			<div class="col-lg-5 p-0">
-				<div class="block-2">
-					<div class="row no-gutters">
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-microphone"></i>
-								<h5>12 speakers</h5>
+<!--==============================
+=     Ask Kate Questions Form     =
+===============================-->
+
+<section class="section ask_kate bg-speaker" id="ask_kate">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 form-container">
+				<div class="section-title white">
+					<h3>Ask the <span class="alternate">Director!</span></h3>
+					<p>Have any questions about research culture at the University of Surrey? Kate Gleeson, Director of the Doctoral College, will answer them during her talk on Thursday! Let us know what questions you have by submitting them below. If you have questions for any of our other speakers, you can also let us know here.</p>
+					<br>
+					<form role="form" method="post" id="reused_form">
+						<div class="row justify-content-center">
+					    		<div class="col-sm-10 form-group">
+								<label for="speaker" style="color:white">Speaker: &nbsp;&nbsp;</label>
+								<select class="form-dropdown" id="speaker" name="speaker" data-component="dropdown" required> <!-- style="width:310px" aria-labelledby="label_9"-->
+									<option selected="" value="Kate Gleeson"> Kate Gleeson </option>
+									<option value="David Sampson"> David Sampson </option>
+									<option value="Kate Hext"> Kate Hext </option>
+									<option value="Jim Al-Khalili"> Jim Al-Khalili </option>
+									<option value="Mirjana Povic"> Mirjana Povic </option>
+									<option value="Osama Khan"> Osama Khan </option>
+									<option value="Angela Saini"> Angela Saini </option>
+									<option value="Will Davies"> Will Davies </option>
+									<option value="Emma Francis"> Emma Francis </option>
+									<option value="Rana Marrington"> Rana Marrington </option>
+									<option value="Gelong Thubten"> Gelong Thubten </option>
+									<option value="Derk-Jan Dijk"> Derk-Jan Dijk </option>
+								</select>
 							</div>
 						</div>
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-lightbulb-o"></i>
-								<h5>5 topics</h5>
+						<div class="row justify-content-center">
+							<div class="col-sm-10 form-group">
+								<!--<label for="question"> Question:</label>-->
+								<textarea class="form-control" type="textarea" name="question" id="question" placeholder="Your Question" maxlength="6000" rows="3" required></textarea>
 							</div>
 						</div>
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-laptop"></i>
-								<h5>all virtual</h5>
+						<div class="row justify-content-center">
+							<div class="col-sm-5 form-group">
+								<!--<label for="name"> Your Name:</label>-->
+								<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+							</div>
+							<div class="col-sm-5 form-group">
+								<!--<label for="email"> Email:</label>-->
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
 							</div>
 						</div>
-						<div class="col-6">
-							<!-- Service item -->
-							<div class="service-item">
-								<i class="fa fa-calendar"></i>
-								<h5>5 day event</h5>
+						<div class="row justify-content-center">
+							<div class="col-sm-2 form-group">
+								<button type="submit" class="btn btn-lg btn-warning btn-block">Submit</button>
 							</div>
 						</div>
-					</div>
+					</form>
+					<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Your question was submitted successfully! Thanks for weighing in!</h3> </div>
+					<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry, there was an error sending your question. Apologies! Please contact us at surreyastro@gmail.com with your question. </div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+	
+<!--====  End of Ask Kate  ====-->
 
-<!--====  End of Feature  ====-->
 
 
 
@@ -835,6 +845,68 @@
 
 
 
+
+<!--=============================
+=            Feature            =
+==============================-->
+
+<section class="ticket-feature">
+	<div class="container-fluid m-0 p-0">
+		<div class="row p-0 m-0">
+			<div class="col-lg-7 p-0 m-0">
+				<div class="block bg-timer overlay-dark text-center">
+					<div class="section-title white m-0">
+						<h3>Join the <span class="alternate">Discussion</span></h3>
+						<p>Free and open to all members of the University of Surrey community.</p>
+						<p>Connection details will only be sent to registered participants.</p>
+						<br>
+					</div>
+					<a href="https://www.eventbrite.co.uk/e/surrey-reach-research-culture-week-tickets-124385021949" class="btn btn-main-md">Register</a>
+				</div>
+			</div>
+			<div class="col-lg-5 p-0">
+				<div class="block-2">
+					<div class="row no-gutters">
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-microphone"></i>
+								<h5>12 speakers</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-lightbulb-o"></i>
+								<h5>5 topics</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-laptop"></i>
+								<h5>all virtual</h5>
+							</div>
+						</div>
+						<div class="col-6">
+							<!-- Service item -->
+							<div class="service-item">
+								<i class="fa fa-calendar"></i>
+								<h5>5 day event</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Feature  ====-->
+
+
+
+
 <!--============================
 =            Footer            =
 =============================-->
@@ -876,6 +948,8 @@
   <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
   <!-- Custom Script -->
   <script src="js/custom.js"></script>
+  <!-- Questions Form -->
+  <script src="js/form.js"></script>
 </body>
 
 </html>

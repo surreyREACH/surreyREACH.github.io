@@ -1960,7 +1960,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .ticket-feature .block-2 {
   position: relative;
-  padding: 150px 10%;
+  padding: 55px 10%; /* orig 150 px */
   height: 100%;
   background: #ff6600;
 }
