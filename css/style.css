@@ -1584,6 +1584,12 @@ select.form-control:not([size]):not([multiple]) {
     /*background: rgba(255, 102, 0, 0.15)*/
 }
 
+@media (max-width: 575px) {
+  .schedule .schedule-contents .schedule-item ul li .abstract {
+    display: none;
+  }  
+}
+
 .schedule .schedule-contents .schedule-item li.headings {
   padding: 22px 40px;
   background: #ff6600;
