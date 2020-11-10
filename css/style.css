@@ -1583,12 +1583,6 @@ select.form-control:not([size]):not([multiple]) {
     width: 100%;
 }
 
-@media (max-width: 575px) {
-  .schedule .schedule-contents .schedule-item ul li .abstract {
-    display: none;
-  }  
-}
-
 .schedule .schedule-contents .schedule-item ul li button {
     background: #fff;
     border: none;
