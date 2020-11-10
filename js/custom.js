@@ -84,11 +84,12 @@
 function showAbstract(id_abs,id_button) {
     var abs = document.getElementById(id_abs);
     var button = document.getElementById(id_button);
-  if (abs.style.display === "none") {
-      abs.style.display = "block";
-      button.firstChild.data = "\u2796";
-  } else {
-      abs.style.display = "none";
-      button.firstChild.data = "\u2795";
-  }
+    //if (button.firstChild.data === "\u2795") {
+    if (abs.style.display === "block") {
+	abs.style.display = "none";
+	button.firstChild.data = "\u2795";
+    } else {
+	abs.style.display = "block";
+	button.firstChild.data = "\u2796";
+    }
 }

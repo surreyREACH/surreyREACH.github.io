@@ -1531,7 +1531,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 575px) {
   .schedule .schedule-contents .schedule-item ul li .time {
-    width: 37%; /* 37% */
+    width: 48%; /* 37% */
   }
 }
 
@@ -1553,7 +1553,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 575px) {
   .schedule .schedule-contents .schedule-item ul li .speaker {
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -1583,7 +1583,14 @@ select.form-control:not([size]):not([multiple]) {
     width: 100%;
 }
 
+@media (max-width: 575px) {
+    .schedule .schedule-contents .schedule-item ul li .abstract {
+	display: none;
+    }
+}   
+
 .schedule .schedule-contents .schedule-item ul li button {
+    display: none;
     background: #fff;
     border: none;
     outline: none;
@@ -1593,6 +1600,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 575px) {
     .schedule .schedule-contents .schedule-item ul li button {
+	display: block;
 	padding: 0px 0px;
     }
 }
@@ -1630,6 +1638,12 @@ select.form-control:not([size]):not([multiple]) {
 .schedule .schedule-contents .schedule-item li.schedule-details .block div {
   color: #222222;
   font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 575px) {
+    .schedule .schedule-contents .schedule-item li.schedule-details .block div {
+	font-size: 0.9em;
+    }
 }
 
 .schedule .schedule-contents .schedule-item li.schedule-details .block div i {
