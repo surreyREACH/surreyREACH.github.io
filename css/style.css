@@ -1580,17 +1580,12 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule .schedule-contents .schedule-item ul li .abstract {
+    display: none;
     width: 100%;
 }
 
-@media (max-width: 575px) {
-    .schedule .schedule-contents .schedule-item ul li .abstract {
-	display: none;
-    }
-}   
-
 .schedule .schedule-contents .schedule-item ul li button {
-    display: none;
+    display: block;
     background: #fff;
     border: none;
     outline: none;
@@ -1600,7 +1595,6 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 575px) {
     .schedule .schedule-contents .schedule-item ul li button {
-	display: block;
 	padding: 0px 0px;
     }
 }
